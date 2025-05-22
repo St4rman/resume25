@@ -8,8 +8,6 @@ const myfont = localFont({
   src: "../head.otf",
 });
 
-
-
 const Rockstar = () => {
   return (
     <div>
