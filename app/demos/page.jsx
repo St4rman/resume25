@@ -72,17 +72,17 @@ const Demos = () => {
           <h3 className="my-3 text-1xl">Tech Used: </h3>
           <div className="my-3 px-4 lg:px-6">
              <p className="my-5">
-              * Unreal Engine 5, Gameplay Ability System, State Based Enemy AI
+              * Unreal Engine 5, <span className="text-accent">Gameplay Ability System</span>, State and Behavior Tree
             </p>
-            <p className="my-5">* State Trees, EQS, Pawn Sensing, AITasks, AIDecorators, AIServices </p>
-            <p className="my-5">* Modular Weapon System, Inventory components, Gameplay Ability Tags, Gameplay Cues, Attribute Sets </p>
+            <p className="my-5">* State Trees, EQS, Pawn Sensing, AITasks, AIDecorators, AIServices for <span className="text-accent"> Boss AI </span> </p>
+            <p className="my-5">* <span className="text-accent">Modular Weapon System</span> , Inventory components, Gameplay Ability Tags, Gameplay Cues, Attribute Sets </p>
             
           </div>
 
           <h3 className="my-3 text-1xl">Video:</h3>
           <div className="flex">
             <div className="w-1/2 m-1 bg-black/50 rounded-lg">
-            <iframe className="w-full p-4 aspect-video" src="https://www.youtube.com/embed/luivj8L2OSE?si=f6J3FYejPao4hAmO"></iframe>
+            <iframe className="w-full p-4 aspect-video" allow='autoplay' src="https://www.youtube.com/embed/luivj8L2OSE?si=f6J3FYejPao4hAmO?autoplay=1"></iframe>
             </div>
           <div className="w-1/2 m-1 bg-black/50 rounded-lg">
             <iframe

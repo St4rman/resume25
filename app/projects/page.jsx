@@ -76,7 +76,7 @@ const Projects = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-[60px]"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-[40px]"
           >
             {projects.map((project, index) => {
               return (

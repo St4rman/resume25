@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="text-xl font-bold pl-5">VER 3.0.1</div>
             </div>
             <div className="text-sm text-justify text-off-white/80 font-semibold py-3">
-              * I am an Indian Game Developer specializing in
+              * I am an Game Developer specializing in
               Gameplay Programming, Graphics, Feature programming and leading
               teams. With a knack for creating distict gameplay experiences, my
               work spans different platforms, seamlessly blending strategic
