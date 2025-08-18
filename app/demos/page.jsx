@@ -31,33 +31,45 @@ const Demos = () => {
               Gameplay Demos
             </p>
           </div>
-          <p className="my-4 text-accent-hover">Page for all of my gameplay demos, primarily made on UE5, using C++ and minimal blueprinting.</p>
+          <p className="my-4 text-accent-hover">
+            Page for all of my gameplay demos, primarily made on UE5, using C++
+            and minimal blueprinting.
+          </p>
 
-            <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center">
             <span className=" flex justify-center items-center lg:text-2xl text-1xl">
               <GiSevenPointedStar />
             </span>
             <p
               className={`${myfont.className} lg:text-3xl text-2xl font-extrabold leading-none text-off-white px-4`}
-            > SoulsBorne Combat
+            >
+              {" "}
+              SoulsBorne Combat
             </p>
           </div>
-          <div className="my-3 px-4 lg:px-6">
-            <p className="my-5">
-              * A <span className="text-accent">SoulsBorne inspired</span>{" "}
-              combat system game, built in Unreal Engine 5 and gameplay Ability system.
-            </p>
-            <p className="my-5">
-              * Featuring a modular data-based {" "}
-              <span className="text-accent">Weapons System</span>,
-              built to be extensible and Scalable.{" "}
-            </p>
-            <p className="my-5">
-              * <span className="text-accent">State-tree based </span>boss behavior using EQS pawn sensing and more
-            </p>
+          <div className="flex lg:flex-row flex-col">
+            <div className="my-3 px-4 lg:px-6 flex flex-col justify-center align-top">
+              <p className="my-5">
+                * A <span className="text-accent">SoulsBorne inspired</span>{" "}
+                combat system game, built in Unreal Engine 5 and gameplay
+                Ability system.
+              </p>
+              <p className="my-5">
+                * Featuring a modular data-based{" "}
+                <span className="text-accent">Weapons System</span>, built to be
+                extensible and Scalable.{" "}
+              </p>
+              <p className="my-5">
+                * <span className="text-accent">State-tree based </span>boss
+                behavior using EQS pawn sensing and more
+              </p>
+            </div>
+            <div className="px-5">
+              <Video />
+            </div>
           </div>
 
-           <div className="flex flex-col lg:flex-row justify-center items-center">
+          <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
             <Link
               href="https://github.com/St4rman/Soulsborne"
               target="_blank"
@@ -71,31 +83,36 @@ const Demos = () => {
           </div>
           <h3 className="my-3 text-1xl">Tech Used: </h3>
           <div className="my-3 px-4 lg:px-6">
-             <p className="my-5">
-              * Unreal Engine 5, <span className="text-accent">Gameplay Ability System</span>, State and Behavior Tree
+            <p className="my-5">
+              * Unreal Engine 5,{" "}
+              <span className="text-accent">Gameplay Ability System</span>,
+              State and Behavior Tree
             </p>
-            <p className="my-5">* State Trees, EQS, Pawn Sensing, AITasks, AIDecorators, AIServices for <span className="text-accent"> Boss AI </span> </p>
-            <p className="my-5">* <span className="text-accent">Modular Weapon System</span> , Inventory components, Gameplay Ability Tags, Gameplay Cues, Attribute Sets </p>
-            
+            <p className="my-5">
+              * State Trees, EQS, Pawn Sensing, AITasks, AIDecorators,
+              AIServices for <span className="text-accent"> Boss AI </span>{" "}
+            </p>
+            <p className="my-5">
+              * <span className="text-accent">Modular Weapon System</span> ,
+              Inventory components, Gameplay Ability Tags, Gameplay Cues,
+              Attribute Sets{" "}
+            </p>
           </div>
 
-          <h3 className="my-3 text-1xl">Video:</h3>
+          <h3 className="my-3 text-1xl">Devlog:</h3>
           <div className="flex">
             <div className="w-1/2 m-1 bg-black/50 rounded-lg">
-            <iframe className="w-full p-4 aspect-video" allow='autoplay' src="https://www.youtube.com/embed/luivj8L2OSE?si=f6J3FYejPao4hAmO?autoplay=1"></iframe>
+              <iframe
+                className="w-full p-4 aspect-video"
+                src="https://www.youtube.com/embed/aRxZbhFGuqA?si=1YGiHC-xiuQuTMB4"
+              ></iframe>
             </div>
-          <div className="w-1/2 m-1 bg-black/50 rounded-lg">
-            <iframe
-            className="w-full p-4 aspect-video"
-            src="https://www.youtube.com/embed/aRxZbhFGuqA?si=1YGiHC-xiuQuTMB4"></iframe>
-            </div>
-          
           </div>
 
-         <h3 className="my-10 text-3xl">Gallery:</h3>
+          <h3 className="my-10 text-3xl">Gallery:</h3>
           <p className="text-off-white/50 font-thin">hover over the images!</p>
-          
-            <SoulsGallery />
+
+          <SoulsGallery />
         </div>
       </section>
     </div>
@@ -103,3 +120,20 @@ const Demos = () => {
 };
 
 export default Demos;
+
+export function Video() {
+  return (
+    <video
+      width="auto"
+      height="auto"
+      autoPlay
+      controls
+      preload="auto"
+      playsInline
+      loop
+      muted
+    >
+      <source src="assets/videos/FinShow.mp4" type="video/mp4" />
+    </video>
+  );
+}

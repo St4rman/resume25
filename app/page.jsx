@@ -46,7 +46,7 @@ const Home = () => {
               </Button>
               </a>
               <a href="https://starman.hashnode.dev/"
-                  alt="A pdf version of Idhant's resume"
+                  alt="An external link to Idhant's blog"
                   target="_blank"
                   rel="noopener noreferrer">
               
