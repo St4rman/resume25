@@ -14,7 +14,7 @@ const myfont = localFont({
 const projects = [
   {
     title: "Gameplay Demos",
-    type: "Project - C++ Unreal Engine",
+    type: "Project - C++ Unreal Engine 5",
     description:
       "Gameplay Demos Built primarily on Unreal Engine 5 using C++.",
     image: "/assets/ThumbSB.png",
@@ -27,6 +27,14 @@ const projects = [
       "Multiplayer FPS speedrunning game in C++ and OpenGL.",
     image: "/assets/hellrunners.png",
     href: "/hellrunners",
+  },
+  {
+    title:"Power Kills",
+    type: "Project - Blueprints, Unreal Engine 5",
+    description:
+      "Top down isometric action game built for the Kenney Game Jam using Blueprints",
+    image: "/assets/PK.png",
+    href:"/jam",
   },
 
   {
@@ -76,7 +84,7 @@ const Projects = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-[40px]"
+            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[40px]"
           >
             {projects.map((project, index) => {
               return (
@@ -101,7 +109,7 @@ const Projects = () => {
                       />
                     </div>
                     <div className="w-full flex justify-between items-center relative mt-3">
-                      <h2 className="text-5xl font-extrabold leading-none">
+                      <h2 className="lg:text-4xl font-extrabold leading-none">
                         {project.title}
                       </h2>
                       <Link href={project.href} className="w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] rounded-full bg-off-white hover:bg-accent transition:colors duration-300 flex justify-center items-center">
