@@ -33,7 +33,7 @@ const projects = [
     type: "Project - Blueprints, Unreal Engine 5",
     description:
       "Top down isometric action game built for the Kenney Game Jam using Blueprints",
-    image: "/assets/PK.png",
+    image: "/assets/pkthumb.png",
     href:"/jam",
   },
 
