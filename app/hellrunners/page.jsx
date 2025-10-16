@@ -87,7 +87,7 @@ const Hellrunners = () => {
             <div>
               <h3 className="my-7 text-3xl">My Role:</h3>
               <div className="my-3 px-4 lg:px-6">
-                <p className="my-5">Team Lead, Gameplay Programmer</p>
+                <p className="my-5"><span className="text-accent">Team Lead, Gameplay Programmer</span></p>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Hellrunners = () => {
 
           <div className="flex flex-col justify-center items-center">
             <img
-              className="h-auto max-w-7/10 rounded-lg"
+              className="h-auto lg:max-w-7/10 rounded-lg"
               src="/assets/code/CapvsObb.png"
               alt=""
             />
@@ -146,7 +146,7 @@ const Hellrunners = () => {
 
           <div className="flex flex-col justify-center items-center">
             <img
-              className="h-auto max-w-6/10 rounded-lg"
+              className="h-auto lg:max-w-6/10 rounded-lg"
               src="/assets/code/LevelGen.png"
               alt=""
             />
@@ -192,7 +192,7 @@ const Hellrunners = () => {
 
            <div className="flex flex-col justify-center items-center">
             <img
-              className="h-auto max-w-6/10 rounded-lg"
+              className="h-auto lg:max-w-6/10 rounded-lg"
               src="/assets/code/DebugInfo.png"
               alt="Debug Information being displayed on the screen"
             />

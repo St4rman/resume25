@@ -138,7 +138,7 @@ const Demos = () => {
 
           <div className="flex flex-col justify-center items-center">
             <img
-              className="h-auto max-w-7/10 rounded-lg"
+              className="h-auto lg:max-w-7/10 rounded-lg"
               src="/assets/code/DodgeAbility.png"
               alt=""
             />
