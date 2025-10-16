@@ -126,3 +126,28 @@ const Hellrunners = () => {
 };
 
 export default Hellrunners;
+
+
+export function HellVideo() {
+  return (
+    // <video
+    //   width="auto"
+    //   height="auto"
+    //   autoPlay
+    //   controls
+    //   preload="auto"
+    //   playsInline
+    //   loop
+    //   muted
+    // >
+    //   <source src="assets/videos/FinShow.mp4" type="video/mp4" />
+    // </video>
+    <iframe 
+    src="https://www.youtube.com/embed/FiafzASCHR8?si=T-wE75eOZbZDcCFw&amp;start=29"
+    loading="lazy"
+    
+    >
+
+    </iframe>
+  );
+}
