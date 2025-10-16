@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Link from "next/link";
+import { FaLink } from "react-icons/fa";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -64,6 +65,16 @@ const Home = () => {
                   iconsStyles="w-15 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
                 />
               </div>
+             
+            </div>
+            <div className="mt-8 text-accent-hover">
+              * Currently Building: 
+              <a 
+              className="underline decoration-wavy ml-1"
+              target="_blank"
+              rel="noopener noreferrer"  alt="An external link to a post"
+              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine-graphicsprogramming-gamedev-activity-7377348034407415808-Sq8g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
+                 Multiplayer 1v1 FPS <FaLink className="inline" /> </a>
             </div>
           </div>
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
