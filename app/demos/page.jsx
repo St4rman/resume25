@@ -37,7 +37,7 @@ const Demos = () => {
             <p
               className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
             >
-              Gameplay Demos
+              Project Borne
             </p>
           </div>
           <p className="my-4 text-accent-hover">

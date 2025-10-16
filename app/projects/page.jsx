@@ -13,10 +13,10 @@ const myfont = localFont({
 
 const projects = [
   {
-    title: "Gameplay Demos",
-    type: "Project - C++ Unreal Engine 5",
+    title: "Project Borne",
+    type: "Project - C++ Unreal Engine 5, GAS, AI",
     description:
-      "Gameplay Demos Built primarily on Unreal Engine 5 using C++.",
+      "Soulslike Combat recreated in Unreal engine using GAS. Extensible weapon system.",
     image: "/assets/ThumbSB.png",
     href: "/demos",
   },
@@ -24,7 +24,7 @@ const projects = [
     title: "Hellrunners",
     type: "Project - C++ Lead Programmer",
     description:
-      "Multiplayer FPS speedrunning game in C++ and OpenGL.",
+      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
     image: "/assets/hellrunners.png",
     href: "/hellrunners",
   },
