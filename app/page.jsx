@@ -6,6 +6,7 @@ import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
+import PExp from "./pexp/page";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -82,6 +83,7 @@ const Home = () => {
           </div>
         </div>
         <Projects />
+        <PExp />
         </div>
     </section>
     

@@ -10,51 +10,27 @@ const myfont = localFont({
   src: "../head.otf",
 });
 
-const projects = [
-  {
-    title: "Project Borne",
-    type: "Project - C++ Unreal Engine 5, GAS, AI",
-    description:
-      "Soulslike Combat recreated in Unreal engine using GAS. Extensible weapon system.",
-    image: "/assets/ThumbSB.png",
-    href: "/demos",
-  },
-  {
-    title: "Hellrunners",
-    type: "Project - C++ Lead Programmer",
-    description:
-      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
-    image: "/assets/hellrunners.png",
-    href: "/hellrunners",
-  },
 
+const experience = [
   {
-    title: "Fate Shooter",
-    type: "Project - C++ UE5, Multiplayer, Networked",
+    title: "Rockstar Games",
+    type: "Work Experience",
     description:
-      "1v1 Movement FPS, UE5, using steam sessions.",
-    image: "/assets/fwog.png",
-    href: "/fateshooter",
+      "I provided online QA support to devs targeting PS, XBX devkits and online titles.",
+    image: "/assets/lsdwwide.jpg",
+    href: "/rockstar",
   },
   {
-    title:"Power Kills",
-    type: "Project - Blueprints, Unreal Engine 5",
+    title: "Jambox Games",
+    type: "Work Experience",
     description:
-      "Top down isometric action game built for the Kenney Game Jam using Blueprints",
-    image: "/assets/pkthumb.png",
-    href:"/jam",
-  },
-  {
-    title: "Grass System",
-    type: "Project - C++ OpenGL Rendering",
-    description:
-      "Noise based foliage system using GPU Instancing  in C++ and OpenGL.",
-    image: "/assets/grassRef.png",
-    href: "/grass",
+      "Gameplay Programmer for Indie company targeting Mobile on unity.",
+    image: "/assets/jbx.png",
+    href: "/jambox",
   },
 ];
 
-const Projects = () => {
+const PExp = () => {
   return (
     <>
       <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-3 xl:px-6">
@@ -66,7 +42,7 @@ const Projects = () => {
                           <p
                             className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
                           >
-                            Projects
+                            Experience
                           </p>
                         </div>
           
@@ -78,7 +54,7 @@ const Projects = () => {
             }}
             className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[40px]"
           >
-            {projects.map((project, index) => {
+            {experience.map((project, index) => {
               return (
                 <div
                   key={index}
@@ -123,4 +99,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default PExp;
