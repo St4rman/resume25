@@ -28,7 +28,7 @@ const Demos = () => {
   return (
     <div>
       <div className="w-full relative overflow-hidden h-35 lg:h-70 display-block">
-        <Image alt="" fill objectFit="cover" src="/assets/BannerSB.png" />
+        <Image alt="" fill objectFit="cover" src="/assets/fateShooter/Backdrop.png" />
       </div>
       <section className="flex flex-col justify-center py-12 xl:py-6 xl:px-6">
         <div className="container mx-auto lg:px-20 px-10">
@@ -60,7 +60,10 @@ const Demos = () => {
           <div className="flex lg:flex-row flex-col">
             <div className="my-3 px-4 lg:px-6 flex flex-col justify-center align-top">
               <p className="my-5">
-                * A multiplayer 1v1 FPS, built in Unreal 5 with  <span className="text-accent">steam sessions</span> and server creation setup support. Focus on tight movement and fun gameplay. 
+                * A multiplayer 1v1 FPS, with a focus on <span className="text-accent">movement techinques like rocket jumping</span>, tight movement and fun gameplay. 
+              </p>
+              <p className="my-5">
+                * Built in Unreal 5 with  <span className="text-accent">steam sessions</span> and server creation setup support. 
 
               </p>
               <p className="my-5">
@@ -73,21 +76,19 @@ const Demos = () => {
           </div>
 
           
-          <h3 className="my-3 text-1xl">Tech Used: UPDATE THISSSSS </h3>
+          <h3 className="my-3 text-1xl">Tech Used:</h3>
           <div className="my-3 px-4 lg:px-6">
             <p className="my-5">
               * Unreal Engine 5,{" "}
-              <span className="text-accent">Gameplay Ability System</span>,
-              State and Behavior Tree
+              <span className="text-accent">Steam Sessions plugin</span>,
+              Networked programming
             </p>
             <p className="my-5">
-              * State Trees, EQS, Pawn Sensing, AITasks, AIDecorators,
-              AIServices for <span className="text-accent"> Boss AI </span>{" "}
+              * C++, Replication concepts, NetNotifies <span className="text-accent"> RPC (client, server, netmulticast) </span>{" "}
             </p>
             <p className="my-5">
-              * <span className="text-accent">Modular Weapon System</span> ,
-              Inventory components, Gameplay Ability Tags, Gameplay Cues,
-              Attribute Sets{" "}
+              * <span className="text-accent">Full multiplayer game mode</span>,
+              Free for all with tracked kills and Game mode, game state and player state networked state
             </p>
           </div>
 
@@ -202,12 +203,9 @@ const Demos = () => {
           <h3 className="my-10 text-3xl">Gallery:</h3>
           <div className="flex justify-items-center align-items-center min-w-vw">
             <p className="text-off-white/50 font-thin">
-              hover over the images!
+              Coming soon! 
             </p>
           </div>
-          
-
-          <SoulsGallery />
         </div>
       </section>
     </div>
@@ -228,7 +226,7 @@ export function Video() {
       loop
       muted
     >
-      <source src="assets/videos/FinShow.mp4" type="video/mp4" />
+      <source src="assets/videos/FUpdate.mp4" type="video/mp4" />
     </video>
   );
 }

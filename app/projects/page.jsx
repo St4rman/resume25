@@ -20,20 +20,11 @@ const projects = [
     href: "/demos",
   },
   {
-    title: "Hellrunners",
-    type: "Project - C++ Lead Programmer",
-    description:
-      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
-    image: "/assets/hellrunners.png",
-    href: "/hellrunners",
-  },
-
-  {
-    title: "Fate Shooter",
+    title: "[Project Fate]",
     type: "Project - C++ UE5, Multiplayer, Networked",
     description:
       "1v1 Movement FPS, UE5, using steam sessions.",
-    image: "/assets/fwog.png",
+    image: "/assets/fateShooter/image.png",
     href: "/fateshooter",
   },
   {
@@ -43,6 +34,14 @@ const projects = [
       "Top down isometric action game built for the Kenney Game Jam using Blueprints",
     image: "/assets/pkthumb.png",
     href:"/jam",
+  },
+  {
+    title: "Hellrunners",
+    type: "Project - C++ Lead Programmer",
+    description:
+      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
+    image: "/assets/hellrunners.png",
+    href: "/hellrunners",
   },
   {
     title: "Grass System",
@@ -69,14 +68,13 @@ const Projects = () => {
                             Projects
                           </p>
                         </div>
-          
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}
-            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[40px]"
+            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]"
           >
             {projects.map((project, index) => {
               return (

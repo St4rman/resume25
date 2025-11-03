@@ -25,6 +25,10 @@ const links = [
     path: "/aboutme",
   },
   {
+    name: "Experience",
+    path: "/pexp"
+  },
+  {
     name: "contact",
     path: "/contact",
   },

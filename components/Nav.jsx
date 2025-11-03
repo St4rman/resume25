@@ -13,9 +13,14 @@ const links = [
     path: "/projects",
   },
   {
+    name: "Experience",
+    path: "/pexp"
+  },
+  {
     name: "About Me",
     path: "/aboutme",
   }, 
+  
 ];
 
 const Nav = () => {

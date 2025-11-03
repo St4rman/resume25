@@ -52,7 +52,7 @@ const PExp = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}
-            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[40px]"
+            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[10px]"
           >
             {experience.map((project, index) => {
               return (
