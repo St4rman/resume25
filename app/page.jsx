@@ -6,6 +6,7 @@ import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
+import PExp from "./pexp/page";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -73,7 +74,7 @@ const Home = () => {
               className="underline decoration-wavy ml-1"
               target="_blank"
               rel="noopener noreferrer"  alt="An external link to a post"
-              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine-graphicsprogramming-gamedev-activity-7377348034407415808-Sq8g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
+              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine-gamedev-multiplayer-activity-7391191854555508736-jjiH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
                  Multiplayer 1v1 FPS <FaLink className="inline" /> </a>
             </div>
           </div>
@@ -82,6 +83,7 @@ const Home = () => {
           </div>
         </div>
         <Projects />
+        <PExp />
         </div>
     </section>
     

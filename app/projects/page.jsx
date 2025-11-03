@@ -10,7 +10,6 @@ const myfont = localFont({
   src: "../head.otf",
 });
 
-
 const projects = [
   {
     title: "Project Borne",
@@ -21,12 +20,12 @@ const projects = [
     href: "/demos",
   },
   {
-    title: "Hellrunners",
-    type: "Project - C++ Lead Programmer",
+    title: "[Project Fate]",
+    type: "Project - C++ UE5, Multiplayer, Networked",
     description:
-      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
-    image: "/assets/hellrunners.png",
-    href: "/hellrunners",
+      "1v1 Movement FPS, UE5, using steam sessions.",
+    image: "/assets/fateShooter/image.png",
+    href: "/fateshooter",
   },
   {
     title:"Power Kills",
@@ -36,14 +35,13 @@ const projects = [
     image: "/assets/pkthumb.png",
     href:"/jam",
   },
-
   {
-    title: "Rockstar Games",
-    type: "Work Experience",
+    title: "Hellrunners",
+    type: "Project - C++ Lead Programmer",
     description:
-      "I provided online QA support to devs targeting PS, XBX devkits and online titles.",
-    image: "/assets/lsdwwide.jpg",
-    href: "/rockstar",
+      "Multiplayer FPS speedrunning game in C++ and OpenGL. Physics and Tech Programming.",
+    image: "/assets/hellrunners.png",
+    href: "/hellrunners",
   },
   {
     title: "Grass System",
@@ -52,14 +50,6 @@ const projects = [
       "Noise based foliage system using GPU Instancing  in C++ and OpenGL.",
     image: "/assets/grassRef.png",
     href: "/grass",
-  },
-  {
-    title: "Jambox Games",
-    type: "Work Experience",
-    description:
-      "Gameplay Programmer for Indie company targeting Mobile on unity.",
-    image: "/assets/jbx.png",
-    href: "/jambox",
   },
 ];
 
@@ -84,7 +74,7 @@ const Projects = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}
-            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[40px]"
+            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]"
           >
             {projects.map((project, index) => {
               return (
