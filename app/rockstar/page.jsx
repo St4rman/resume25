@@ -3,6 +3,8 @@ import { GiSevenPointedStar } from "react-icons/gi";
 import React from 'react'
 import Image from 'next/image'
 import localFont from 'next/font/local';
+import { WordsPullUp } from "@/components/word-pull-up";
+import { TextFade } from "@/components/TextFade";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -20,15 +22,17 @@ const Rockstar = () => {
             <span className=" flex justify-center items-center lg:text-5xl text-2xl">
               <GiSevenPointedStar />
             </span>
-            <p
-              className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
-            >
-              Rockstar Games QA
-            </p>
+             <WordsPullUp
+                          text="Rockstar Games QA"
+                          className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
+                        ></WordsPullUp>
           </div>
+          <TextFade>
           <p className="my-4 text-accent-hover">Dev QA, Online QA</p>
           <h3 className="my- 7 text-3xl">Description:</h3>
+          </TextFade>
           <div className="my-3 px-4 lg:px-6">
+            <TextFade>
             <p className="my-5">
               * Provided <span className="text-accent">Support QA </span> for
               many <span className="text-accent"> Online Rockstar </span>{" "}
@@ -46,9 +50,12 @@ const Rockstar = () => {
               doubling back on exitsing bugs and providing new test cases for
               new bugs.
             </p>
+            </TextFade>
           </div>
-          <h3 className="my-10 text-3xl">Details:</h3>
+          <TextFade>
+          <h3 className="my-10 text-3xl">Details:</h3></TextFade>
           <div className="my-3 px-4 lg:px-6">
+            <TextFade>
             <p className="my-5">
               * Provided Quality Assurance on the services, updates, live events
               on{" "}
@@ -71,7 +78,7 @@ const Rockstar = () => {
               being a talented all-rounder that can be relied upon. Bought an
               in-depth understanding of the technical side of things that
               allowed different approaches to QA testing.
-            </p>
+            </p></TextFade>
           </div>
         </div>
       </section>

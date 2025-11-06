@@ -7,6 +7,8 @@ import localFont from "next/font/local";
 import { Button } from "@/components/ui/button";
 import { BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
+import { WordsPullUp } from "@/components/word-pull-up";
+import { TextFade } from "@/components/TextFade";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -24,17 +26,20 @@ const Hellrunners = () => {
             <span className=" flex justify-center items-center lg:text-5xl text-2xl">
               <GiSevenPointedStar />
             </span>
-            <p
-              className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
-            >
-              Hellrunners{" "}
-            </p>
+            <WordsPullUp
+                                    text="Hellrunner"
+                                    className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
+                                    >
+                                    </WordsPullUp>
           </div>
+          <TextFade>
           <p className="my-4 text-accent-hover">C++, FPS, Tech Lead</p>
           <h3 className="my- 7 text-3xl">Description:</h3>
+          </TextFade>
           <div className="my-3 px-4 lg:px-6 flex flex-col lg:flex-row justify-center">
             <div className="basis-1/3 px-3">
               <div className="flex flex-col justify-center">
+                <TextFade>
                 <p className="my-5">
                   * A <span className="text-accent">multiplayer FPS</span>{" "}
                   speedrunning game, built in C++ and OpenGL in 8 weeks.
@@ -49,6 +54,7 @@ const Hellrunners = () => {
                   * <span className="text-accent">Data Driven </span> level
                   generation.
                 </p>
+                
                 <Link
                   href="https://starman.hashnode.dev/hellrunners-post-mortem"
                   target="_blank"
@@ -59,38 +65,47 @@ const Hellrunners = () => {
                     Hellrunners Post Mortem <BsArrowUpRight className="mx-1" />
                   </Button>
                 </Link>
+                </TextFade>
               </div>
             </div>
             <div className="basis-2/3">
-              <HellVideo />
+            <TextFade><HellVideo /></TextFade>
+              
             </div>
           </div>
 
           <div className="flex flex-col lg:flex-row">
             <div>
-              <h3 className="my-10 text-3xl">My Work:</h3>
+              <TextFade>
+              <h3 className="my-10 text-3xl">My Work:</h3></TextFade>
               <div className="flex flex-row">
                 <ul className='list-["*"] text-accent-hover mx-3 my-3'>
+                  <TextFade>
                   <li className="mx-3 px-2"> Core Physics</li>
                   <li className="mx-3 px-2"> Level Generation Systems</li>
                   <li className="mx-3 px-2">Core Gameflow System</li>
+                  </TextFade>
                 </ul>
                 <ul className='list-["*"] text-accent-hover mx-3 my-3'>
+                  <TextFade>
                   <li className="mx-3 px-2">
                     Input Manager, Player Locomotion
                   </li>
                   <li className="mx-3 px-2">Shaders, Post Processing</li>
-                  <li className="mx-3 px-2">Debug Features</li>
+                  <li className="mx-3 px-2">Debug Features</li></TextFade>
                 </ul>
               </div>
             </div>
             <div>
-              <h3 className="my-7 text-3xl">My Role:</h3>
+              <TextFade>
+              <h3 className="my-7 text-3xl">My Role:</h3></TextFade>
               <div className="my-3 px-4 lg:px-6">
-                <p className="my-5"><span className="text-accent">Team Lead, Gameplay Programmer</span></p>
+                <TextFade>
+                <p className="my-5"><span className="text-accent">Team Lead, Gameplay Programmer</span></p></TextFade>
               </div>
             </div>
           </div>
+          <TextFade>
           <h3 className="my-10 text-3xl flex lg:flex-col">More Details:</h3>
           <h4 className="text-xl underline underline-offset-8 decoration-text-accnet-hover/50 text-accent-hover flex lg:flex-col ">
             Physics, Collisions, Player Controller
@@ -111,7 +126,8 @@ const Hellrunners = () => {
             for player vs player collision. <span className="text-accent">Ground detection</span> was also written by
             me.
           </p>
-
+          </TextFade>
+          <TextFade>
           <div className="flex flex-col justify-center items-center">
             <img
               className="h-auto lg:max-w-7/10 rounded-lg"
@@ -124,7 +140,9 @@ const Hellrunners = () => {
             <p className="text-off-white/50 font-thin">
               and then call a Capsule AABB test on that
             </p>
-          </div>
+          </div></TextFade>
+
+          <TextFade>
           <h4 className="text-xl underline underline-offset-8 decoration-text-accnet-hover/50 text-accent-hover flex lg:flex-col ">
             Tools, Level Generation
           </h4>
@@ -143,7 +161,8 @@ const Hellrunners = () => {
             JSON. Then the relatively non required and non replicated things can
             be sorted out from C++ side.
           </p>
-
+</TextFade>
+            <TextFade>
           <div className="flex flex-col justify-center items-center">
             <img
               className="h-auto lg:max-w-6/10 rounded-lg"
@@ -155,6 +174,8 @@ const Hellrunners = () => {
               generation
             </p>
           </div>
+          </TextFade>
+          <TextFade>
           <h4 className="text-xl underline underline-offset-8 decoration-text-accnet-hover/50 text-accent-hover flex lg:flex-col ">
             Shader Work
           </h4>
@@ -165,7 +186,7 @@ const Hellrunners = () => {
             standouts. Alongside that, general bug fixes and adding debug mode,
             there is a lot of meat of work on this project.{" "}
           </p>
-
+          </TextFade>
           <div className="flex flex-col justify-center items-center">
             <iframe
               className="aspect-video"
@@ -176,7 +197,7 @@ const Hellrunners = () => {
               loading="lazy"
             ></iframe>
           </div>
-
+          <TextFade>
           <h4 className="text-xl underline underline-offset-8 decoration-text-accnet-hover/50 text-accent-hover flex lg:flex-col ">
             Additional Tooling
           </h4>
@@ -189,7 +210,8 @@ const Hellrunners = () => {
           <p className="my-5">
             * To help with that, I ended up implementing a Debug tool, with the following features; FPS count, Level Generation & Physics Update, Current CPU, GPU usage, Collision Counts, and Camera Debug info. 
           </p>
-
+</TextFade>
+<TextFade>
            <div className="flex flex-col justify-center items-center">
             <img
               className="h-auto lg:max-w-6/10 rounded-lg"
@@ -213,9 +235,12 @@ const Hellrunners = () => {
               </Button>
             </Link>
           </div>
+</TextFade>
 
+<TextFade>
           <h3 className="my-10 text-3xl">Gallery:</h3>
           <p className="text-off-white/50 font-thin">hover over the images!</p>
+          </TextFade>
           <ProjGallery />
         </div>
       </section>

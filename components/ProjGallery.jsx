@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from 'next/navigation';
 import React from 'react'
+import { TextFade } from './TextFade';
 
 const HellImages = [
     {
@@ -63,7 +64,8 @@ const ProjGallery = () => {
 
     if(currentPath=="/hellrunners"){
         return(
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div >
+                <TextFade className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {HellImages.map((img, index)=>{
             return(
                 
@@ -79,12 +81,14 @@ const ProjGallery = () => {
                 
             )
         })}
+        </TextFade>
         </div>
         )
     }
     else if(currentPath=="/grass"){
         return(
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div> 
+                <TextFade className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {GrassImages.map((img, index)=>{
             return(
                 
@@ -99,6 +103,7 @@ const ProjGallery = () => {
                 
             )
         })}
+        </TextFade>
         </div>
         )
     }

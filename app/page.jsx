@@ -7,6 +7,7 @@ import Contact from "./contact/page";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
 import PExp from "./pexp/page";
+import { TextFade } from "@/components/TextFade";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -16,15 +17,19 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
+        
         <div className="flex flex-col xl:flex-row items-center justify-between lg:pt-8 lg:pb-24 lg:px-50">
           {/* main heading */}
           <div className="text-center xl:text-left order-2 xl:order-none">
+            <TextFade>
             <div className="flex justify-center">
               <h1 className={`${myfont.className} text-accent flex flex-row`}>Idhant  
               <span className="lg:block hidden"><Sparkle className="star"/></span>
                Dabral
               </h1>
-              </div>
+              
+            </div>
+              
             <span className="text-xl italic text-accent-hover/80">
               Gameplay Programmer
             </span>
@@ -32,8 +37,11 @@ const Home = () => {
               Specialised in player facing features and enabling teams. Excited
               to bring your gameplay Ideas to life.
             </p>
+            </TextFade>
             {/* socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
+              <TextFade
+              >
               <a href="/assets/IDabralResume2025.pdf"
                   alt="A pdf version of Idhant's resume"
                   target="_blank"
@@ -47,6 +55,8 @@ const Home = () => {
                 <span>Resume</span>
               </Button>
               </a>
+              </TextFade>
+              <TextFade>
               <a href="https://starman.hashnode.dev/"
                   alt="An external link to Idhant's blog"
                   target="_blank"
@@ -60,14 +70,18 @@ const Home = () => {
                 <span>Blog</span>
               </Button>
               </a>
+              </TextFade>
+              <TextFade>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
                   iconsStyles="w-15 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
                 />
               </div>
+              </TextFade>
              
             </div>
+            <TextFade>
             <div className="mt-8 text-accent-hover">
               * Currently Building: 
               <a 
@@ -77,7 +91,9 @@ const Home = () => {
               href="https://www.linkedin.com/posts/idhant-dabral_unrealengine-gamedev-multiplayer-activity-7391191854555508736-jjiH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
                  Multiplayer 1v1 FPS <FaLink className="inline" /> </a>
             </div>
+            </TextFade>
           </div>
+          
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <PlatformIcon />
           </div>
