@@ -9,6 +9,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
 import SoulsGallery from "@/components/SoulsGallery";
 import JamGallery from "@/components/JamGallery";
+import { TextFade } from "@/components/TextFade";
+import { WordsPullUp } from "@/components/word-pull-up";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -27,17 +29,19 @@ const Gamejam = () => {
             <span className=" flex justify-center items-center lg:text-5xl text-2xl">
               <GiSevenPointedStar />
             </span>
-            <p
-              className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
-            >
-              Power Kills
-            </p>
+            <WordsPullUp
+                        text="Power Kills"
+                        className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
+                        >
+                        </WordsPullUp>
           </div>
+          <TextFade>
           <p className="my-4 text-accent-hover">
             A top down Isometric action RPG made in unreal engine for the Kenney Jam 25, in 48 hours using Unreal Engine 5 and Blueprints. 
           </p>
-
-          <div className="flex flex-row items-center">
+          </TextFade>
+          <div >
+            <TextFade className="flex flex-row items-center">
             <span className=" flex justify-center items-center lg:text-2xl text-1xl">
               <GiSevenPointedStar />
             </span>
@@ -47,9 +51,12 @@ const Gamejam = () => {
               {" "}
               SoulsBorne Combat
             </p>
+             </TextFade>
           </div>
+         
           <div className="flex lg:flex-row flex-col">
             <div className="my-3 px-4 lg:px-6 flex flex-col justify-center align-top">
+              <TextFade>
               <p className="my-5">
                 * A <span className="text-accent">Top Down Action RPG</span>{" "} created for the Kenney Jam in <span className="text-accent">72 hours</span>. Made for the theme "POWER" built with a team of another person.
               </p>
@@ -60,12 +67,14 @@ const Gamejam = () => {
               <p className="my-5">
                 * <span className="text-accent">Data driven power </span>and stats, making it a puzzle as well as an action game. 
               </p>
+              </TextFade>
             </div>
             <div className="px-5">
-              <JamVideo />
+              <TextFade><JamVideo /></TextFade>
+              
             </div>
           </div>
-
+          <TextFade>
           <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
             <Link
               href="https://ishant4izard.itch.io/powerkills"
@@ -78,8 +87,11 @@ const Gamejam = () => {
               </Button>
             </Link>
           </div>
-          <h3 className="my-3 text-1xl">Tech Used: </h3>
+          </TextFade>
+          <TextFade>
+          <h3 className="my-3 text-1xl">Tech Used: </h3></TextFade>
           <div className="my-3 px-4 lg:px-6">
+            <TextFade>
             <p className="my-5">
               * Unreal Engine 5,{" "}
               <span className="text-accent">Blueprints</span>.
@@ -90,6 +102,7 @@ const Gamejam = () => {
             <p className="my-5">
               * <span className="text-accent">In universe UI</span> , and enemy spawns based on levels, <span className="text-accent">breakable environments </span>and multiple approaches to enemies. {" "}
             </p>
+            </TextFade>
           </div>
 
           {/* <h3 className="my-3 text-1xl">Devlog:</h3>
@@ -101,10 +114,10 @@ const Gamejam = () => {
               ></iframe>
             </div>
           </div> */}
-
+          <TextFade>
           <h3 className="my-10 text-3xl">Gallery:</h3>
           <p className="text-off-white/50 font-thin">hover over the images!</p>
-
+          </TextFade>
           <JamGallery />
         </div>
       </section>

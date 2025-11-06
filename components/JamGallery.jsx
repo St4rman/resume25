@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from 'next/navigation';
 import React from 'react'
+import { TextFade } from './TextFade';
 
 const JamImages = [
     {
@@ -21,7 +22,8 @@ const JamImages = [
 const JamGallery = () => {
     const currentPath = usePathname();
         return(
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div >
+                <TextFade className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {JamImages.map((img, index)=>{
             return(
                 
@@ -35,6 +37,7 @@ const JamGallery = () => {
                 </div>
             )
         })}
+        </TextFade>
     </div>
     )
     

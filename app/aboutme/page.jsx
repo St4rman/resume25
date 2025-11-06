@@ -10,6 +10,8 @@ import { FaUnity } from "react-icons/fa6";
 import { FaNetworkWired } from 'react-icons/fa';
 import { FaPeopleArrows } from 'react-icons/fa';
 import { FaGun } from 'react-icons/fa6';
+import { WordsPullUp } from "@/components/word-pull-up";
+import { TextFade } from "@/components/TextFade";
 
 const test = [
 "1", "2", "3"
@@ -26,15 +28,20 @@ const AboutMe = () => {
   return (
     <>
       <div className={`${myfont.className} flex flex-col mt-10 mx-3 lg:mx-15 justify-center`}>
-        <div className='text-3xl lg:text-7xl'>I AM A </div>
-        <div className='text-5xl lg:text-9xl text-accent italic' >GAME PROGRAMMER</div>
+        <TextFade>
+        <div className='text-3xl lg:text-7xl'>I AM A </div></TextFade>
+        <WordsPullUp className='text-5xl lg:text-9xl text-accent italic uppercase' text='GAME PROGRAMMER'></WordsPullUp>
+        {/* <div className='text-5xl lg:text-9xl text-accent italic' >GAME PROGRAMMER</div> */}
       </div>
       
         <div className='flex justify-center align-top flex-col lg:flex-row mx-15'>
+          <TextFade>
          <div className='min-w-l lg:min-w-xl'>
           <Model /> 
          </div>
+         </TextFade>
           <div className='flex flex-col lg:px-1'>
+            <TextFade>
               <div className='text-left my-3 '>
               * I am a UK based Gameplay Programmer, currently looking for work. I'm driven and skilled with Unreal <SiUnrealengine className='inline text-accent'/> and Unity <FaUnity className='inline text-accent'/>.
               </div>
@@ -44,14 +51,16 @@ const AboutMe = () => {
               <div className='text-left my-3'>
               * During my offtime, I enjoy art <FaPaintBrush className='inline mb-2 text-accent'/>, TTRPGs and going on deep dives about coffee<FaCoffee className='inline mx-1 text-accent'/> on wikipedia. I also run a D&D <FaDiceD20 className='inline mb-2 text-accent'  />  campaign for a group of friends, which acts like a creative outlet and helps build community for myself. 
               </div>
-
+</TextFade>
+<TextFade>
                <div className='text-left my-3 '> * Currently Exploring:
               <ul className='list-["*"] text-accent-hover mx-3 my-3'>
+                <TextFade>
                   <li className="mx-3 px-2">Networking and Steam integration in Unreal <FaNetworkWired className='inline'/> </li>
                   <li className="mx-3 px-2">Leadership and Effective Communication Skills <FaPeopleArrows className='inline'/></li>
                   <li className="mx-3 px-2">Fast Snappy physics based movement for FPS <FaGun className='inline'/></li>
-                </ul>
-              </div>
+                </TextFade></ul>
+              </div></TextFade>
           </div>
         </div>
     
