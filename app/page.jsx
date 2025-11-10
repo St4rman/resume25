@@ -88,7 +88,7 @@ const Home = () => {
               className="underline decoration-wavy ml-1"
               target="_blank"
               rel="noopener noreferrer"  alt="An external link to a post"
-              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine-gamedev-multiplayer-activity-7391191854555508736-jjiH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
+              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine5-networkprogramming-gamedev-ugcPost-7391454773713051648-lTpf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
                  Multiplayer 1v1 FPS <FaLink className="inline" /> </a>
             </div>
             </TextFade>
