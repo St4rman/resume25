@@ -176,3 +176,16 @@
 
 }
 
+
+::-moz-selection {
+  background: #f0f66e;
+  color:#f6224c;
+}
+::-webkit-selection {
+  background: #f0f66e;
+  color:#f6224c;
+}
+::selection {
+  background: #f0f66e;
+  color:#f6224c;
+}
