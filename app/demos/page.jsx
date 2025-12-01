@@ -269,7 +269,7 @@ export function Video() {
       loop
       muted
     >
-      <source src="assets/videos/souls-compressed.mp4" type="video/mp4" />
+      <source src="assets/videos/Souls-compressed.mp4" type="video/mp4" />
     </video>
   );
 }
