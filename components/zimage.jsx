@@ -9,7 +9,6 @@ const Zimage = ({src, alt}) => {
         <DialogTitle className="sr-only"> {alt} </DialogTitle>
         <DialogTrigger asChild>
             <img
-            onGH
               className="cursor-pointer h-auto lg:max-w-7/10 rounded-lg"
               src={src}
               alt=""
