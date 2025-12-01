@@ -10,6 +10,7 @@ import Link from "next/link";
 import SoulsGallery from "@/components/SoulsGallery";
 import { TextFade } from "@/components/TextFade";
 import { WordsPullUp } from "@/components/word-pull-up";
+import Zimage from "@/components/zimage";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -28,7 +29,7 @@ const Demos = () => {
   return (
     <div>
       <div className="w-full relative overflow-hidden h-35 lg:h-70 display-block">
-        <Image alt="" fill objectFit="cover" src="/assets/BannerSB.png" />
+        <Image alt="" fill objectFit="cover" src="/assets/banner.png" />
       </div>
       <section className="flex flex-col justify-center py-12 xl:py-6 xl:px-6">
         <div className="container mx-auto lg:px-20 px-10">
@@ -44,8 +45,7 @@ const Demos = () => {
           </div>
           <TextFade>
           <p className="my-4 text-accent-hover">
-            Page for all of my gameplay demos, primarily made on UE5, using C++
-            and minimal blueprinting.
+            Action RPG built in Unreal 5, using Gameplay Ability System, and AI. Test your mettle against your jailor as you escape your eternal prison.
           </p>
           </TextFade>
           <div className="flex flex-row items-center">
@@ -150,12 +150,8 @@ const Demos = () => {
           </TextFade>
           <TextFade>
           <div className="flex flex-col justify-center items-center">
-            
-            <img
-              className="h-auto lg:max-w-7/10 rounded-lg"
-              src="/assets/code/DodgeAbility.png"
-              alt=""
-            />
+
+            <Zimage src="/assets/code/DodgeAbility.png" alt={"Code of dodge ability"}></Zimage>
             <p className="text-off-white/50 font-thin">
               ActivateAbility method that gets called when you press the dodge
               button,
@@ -206,10 +202,13 @@ const Demos = () => {
             but also make the core functionality easy.
           </p>
           </TextFade>
+          <p className="text-off-white/50 font-thin">
+             Click for a closer look!! </p>
           <div className="flex flex-col items-center">
+            
             <div className="flex flex-col lg:flex-row ">
               <TextFade>
-              <Code1 />
+                <Code1 />
               </TextFade>
             </div>
             <p className="text-off-white/50 font-thin">
@@ -270,7 +269,7 @@ export function Video() {
       loop
       muted
     >
-      <source src="assets/videos/FinShow.mp4" type="video/mp4" />
+      <source src="assets/videos/souls-compressed.mp4" type="video/mp4" />
     </video>
   );
 }
@@ -287,7 +286,7 @@ export function WeaponsVideo() {
       loop
       muted
     >
-      <source src="assets/videos/WeaponShowcase.mp4" type="video/mp4" />
+      <source src="assets/videos/WeaponUpdateShowcase.mp4" type="video/mp4" />
     </video>
   );
 }
@@ -302,7 +301,7 @@ const Code1 = () => {
             className="flex flex-col justify-center items-center"
             key={index}
           >
-            <img
+            <Zimage
               className="h-auto max-w-full rounded-lg"
               src={img.src}
               alt=""

@@ -24,6 +24,10 @@ const HellImages = [
         src: "/assets/SB5.png",
         desc: "Training range and damage values"
     },
+    {
+        src: "/assets/SB6.png",
+        desc: "Well done, warrior. You are free."
+    },
 ];
 
 const SoulsGallery = () => {

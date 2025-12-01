@@ -12,14 +12,7 @@ const myfont = localFont({
 });
 
 const projects = [
-  {
-    title: "Project Borne",
-    type: "Project - C++ Unreal Engine 5, GAS, AI",
-    description:
-      "Soulslike Combat recreated in Unreal engine using GAS. Extensible weapon system.",
-    image: "/assets/ThumbSB.png",
-    href: "/demos",
-  },
+  
   {
     title: "[Project Fate]",
     type: "Project - C++ UE5, Multiplayer, Networked",
@@ -27,6 +20,14 @@ const projects = [
       "1v1 Movement FPS, UE5, using steam sessions.",
     image: "/assets/fateShooter/image.png",
     href: "/fateshooter",
+  },
+  {
+    title: "Project Borne",
+    type: "Project - C++ Unreal Engine 5, GAS, AI",
+    description:
+      "Soulslike Combat recreated in Unreal engine using GAS. Extensible weapon system.",
+    image: "/assets/soulsborneThumb.png",
+    href: "/demos",
   },
   {
     title:"Power Kills",
