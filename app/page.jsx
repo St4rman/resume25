@@ -83,13 +83,13 @@ const Home = () => {
             </div>
             <TextFade>
             <div className="mt-8 text-accent-hover">
-              * Currently Building: 
+              * Check out my 2025 Retrospective Video
               <a 
               className="underline decoration-wavy ml-1"
               target="_blank"
               rel="noopener noreferrer"  alt="An external link to a post"
-              href="https://www.linkedin.com/posts/idhant-dabral_unrealengine5-networkprogramming-gamedev-ugcPost-7391454773713051648-lTpf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC2GtrgBXsOR-gmOn3KdKN4GkQ8GfT8H_Dc">
-                 Multiplayer 1v1 FPS <FaLink className="inline" /> </a>
+              href="https://www.youtube.com/watch?v=uZJSgVE78dY">
+                 here<FaLink className="inline" /> </a>
             </div>
             </TextFade>
           </div>

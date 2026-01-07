@@ -12,6 +12,7 @@ import Zimage from "@/components/zimage";
 import  Dialog  from "@/components/ui/dialog";
 import { WordsPullUp } from "@/components/word-pull-up";
 import { TextFade } from "@/components/TextFade";
+import FateGallery from "@/components/FateGallery";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -80,6 +81,18 @@ const Demos = () => {
             <div className="px-5">
               <TextFade>
               <Video />
+              <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
+            <Link
+              href="https://youtu.be/uZJSgVE78dY?si=wisbzM5YsR1p3tmL&t=420"
+              target="_blank"
+              className="w-full flex mx-3 px-3 my-y py-3 flex-row justify-center items-center"
+            >
+              <Button size={"xl"} shape={"round"}>
+                {" "}
+                Detailed Video <BsArrowUpRight className="mx-1" />
+              </Button>
+            </Link>
+          </div>
               </TextFade>
             </div>
           </div>
@@ -221,9 +234,7 @@ const Demos = () => {
 
           <h3 className="my-10 text-3xl">Gallery:</h3>
           <div className="flex justify-items-center align-items-center min-w-vw">
-            <p className="text-off-white/50 font-thin">
-              Coming soon! 
-            </p>
+            <FateGallery />
           </div>
         </div>
       </section>
@@ -245,7 +256,7 @@ export function Video() {
       loop
       muted
     >
-      <source src="assets/videos/FUpdate.mp4" type="video/mp4" />
+      <source src="assets/videos/fateshooter.mp4" type="video/mp4" />
     </video>
   );
 }

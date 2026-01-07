@@ -84,22 +84,23 @@ const Demos = () => {
             <TextFade>
             <div className="px-5">
               <Video />
-            </div>
-            </TextFade>
-          </div>
-
-          <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
+              <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
             <Link
-              href="https://github.com/St4rman/Soulsborne"
+              href="https://youtu.be/uZJSgVE78dY?si=m0Ge9__9uSW3vYx9&t=165"
               target="_blank"
               className="w-full flex mx-3 px-3 my-y py-3 flex-row justify-center items-center"
             >
               <Button size={"xl"} shape={"round"}>
                 {" "}
-                Check out the Source Code <BsArrowUpRight className="mx-1" />
+                Detailed Video <BsArrowUpRight className="mx-1" />
               </Button>
             </Link>
           </div>
+            </div>
+            </TextFade>
+          </div>
+
+          
           <h3 className="my-3 text-1xl">Tech Used: </h3>
           <div className="my-3 px-4 lg:px-6">
             <TextFade>
@@ -227,6 +228,20 @@ const Demos = () => {
             * Built using behavior trees, EQS, pawn sensing, custom queries, services and tasks. Bosses have randomness, but also pattern based behaviors. This allows them to feel learnable but also vary up their strategies.
           </p>
           </TextFade>
+
+          <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
+            <Link
+              href="https://github.com/St4rman/Soulsborne"
+              target="_blank"
+              className="w-full flex mx-3 px-3 my-y py-3 flex-row justify-center items-center"
+            >
+              <Button size={"xl"} shape={"round"}>
+                {" "}
+                Check out the Source Code <BsArrowUpRight className="mx-1" />
+              </Button>
+            </Link>
+          </div>
+
           <TextFade>
            <h3 className="my-3 text-1xl">Devlog:</h3>
           <div className="flex items-center">
@@ -238,7 +253,7 @@ const Demos = () => {
             </div>
           </div>
           </TextFade>
-
+            
           <TextFade>
           <h3 className="my-10 text-3xl">Gallery:</h3>
           <div className="flex justify-items-center align-items-center min-w-vw">

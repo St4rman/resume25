@@ -14,11 +14,11 @@ const myfont = localFont({
 const projects = [
   
   {
-    title: "[Project Fate]",
+    title: "Project Fate",
     type: "Project - C++ UE5, Multiplayer, Networked",
     description:
       "1v1 Movement FPS, UE5, using steam sessions.",
-    image: "/assets/fateShooter/image.png",
+    image: "/assets/fateShooter/mainmenu.png",
     href: "/fateshooter",
   },
   {
@@ -86,6 +86,7 @@ const Projects = () => {
             staggerChildren={0.25}> 
             {projects.map((project, index) => {
               return (
+                
                 <div
                   key={index}
                   className="flex-1 flex-col justify-center gap-6 group"
@@ -96,7 +97,7 @@ const Projects = () => {
                       className="w-full flex justify-between items-center
                   mix-blend-lighten lg:h-60 h-50 relative"
                     >
-                      <Image
+                      <Link href={project.href}><Image
                         src={project.image}
                         priority
                         quality={100}
@@ -104,7 +105,7 @@ const Projects = () => {
                         objectFit="cover"
                         alt=""
                         className="object-contain"
-                      />
+                      /></Link>
                     </div>
                     <div className="w-full flex justify-between items-center relative mt-3">
                       <h2 className="lg:text-4xl font-extrabold leading-none">
