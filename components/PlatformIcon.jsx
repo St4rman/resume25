@@ -6,7 +6,7 @@ import { TextFade } from "./TextFade";
 
 const PlatformIcon = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative hidden xl:block">
       <motion.div
       className="flex flex-row"
         initial = {{opacity: 0}}
@@ -16,8 +16,8 @@ const PlatformIcon = () => {
         }}
       >
         <TextFade className="flex flex-row">
-        <SiUnrealengine className="w-20 h-20 xl:w-25 xl:h-25 justify-center items-center mix-blend-lighten m-10"/>
-        <FaUnity className="w-20 h-20 xl:w-25 xl:h-25 justify-center items-center mix-blend-lighten m-10" />
+        <SiUnrealengine className="w-20 h-20 xl:w-12 xl:h-12 justify-center items-center mix-blend-lighten m-10"/>
+        <FaUnity className="w-20 h-20 xl:w-12 xl:h-12 justify-center items-center mix-blend-lighten m-10" />
         </TextFade>
       </motion.div>
       </div>

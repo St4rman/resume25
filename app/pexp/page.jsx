@@ -14,6 +14,14 @@ const myfont = localFont({
 
 const experience = [
   {
+    title: "Newcastle University",
+    type: "Core VR Game Programmer",
+    description:
+      "Worked with a team at Newcastle University on a VR title targeting Steam VR.",
+    image: "/assets/UnityVR.jpg",
+    href: "/vr",
+  },
+  {
     title: "Rockstar Games",
     type: "Work Experience",
     description:
@@ -90,7 +98,7 @@ const PExp = () => {
                   </div>
                   {/* Textual stuff */}
                   <p className="text-accent-hover"><span className="text-accent">* </span>{project.type}</p>
-                  <p className="text-off-white/60">{project.description}</p>
+                  <p className="text-off-white/60 min-h-25">{project.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
                 </div>
               );

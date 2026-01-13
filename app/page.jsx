@@ -5,9 +5,11 @@ import localFont from "next/font/local";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Link from "next/link";
+import ShowcaseVideo from "@/components/ShowcaseVideo";
 import { FaLink } from "react-icons/fa";
 import PExp from "./pexp/page";
 import { TextFade } from "@/components/TextFade";
+import TExp from "./training/page";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -22,7 +24,7 @@ const Home = () => {
           {/* main heading */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <TextFade>
-            <div className="flex justify-center">
+            <div className="flex justify-center bg-color">
               <h1 className={`${myfont.className} text-accent flex flex-row`}>Idhant  
               <span className="lg:block hidden"><Sparkle className="star"/></span>
                Dabral
@@ -33,7 +35,7 @@ const Home = () => {
             <span className="text-xl italic text-accent-hover/80">
               Gameplay Programmer
             </span>
-            <p className="max-w-[500px] mb-9 text-off-white/80">
+            <p className="max-w-[500px] mb-9 xl:pr-40 text-off-white/90 text-left">
               Specialised in player facing features and enabling teams. Excited
               to bring your gameplay Ideas to life.
             </p>
@@ -61,7 +63,6 @@ const Home = () => {
                   alt="An external link to Idhant's blog"
                   target="_blank"
                   rel="noopener noreferrer">
-              
               <Button
                 variant="outline"
                 size="xl"
@@ -70,19 +71,21 @@ const Home = () => {
                 <span>Blog</span>
               </Button>
               </a>
-              </TextFade>
+              </TextFade> 
+             <div>
               <TextFade>
-              <div className="mb-8 xl:mb-0">
+              <div className=" mb-8 xl:mb-0 min-w-full">
                 <Socials
                   containerStyles="flex gap-6"
-                  iconsStyles="w-15 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
+                  iconsStyles="z-10 w-15 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
                 />
               </div>
               </TextFade>
-             
+              </div>
             </div>
+             
             <TextFade>
-            <div className="mt-8 text-accent-hover">
+            <div className="mt-8 text-accent-hover text-xl">
               * Check out my 2025 Retrospective Video
               <a 
               className="underline decoration-wavy ml-1"
@@ -94,12 +97,20 @@ const Home = () => {
             </TextFade>
           </div>
           
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <PlatformIcon />
+          <div className="order-1 xl:order-none mb-0 xl:mb-0">
+            {/* <PlatformIcon /> */}
+            <div className="min-w-l xl:-ml-50 -z-10">
+            <ShowcaseVideo />
+
           </div>
+          </div>
+          <div>
+          </div>
+          
         </div>
         <Projects />
         <PExp />
+        <TExp />
         </div>
     </section>
     

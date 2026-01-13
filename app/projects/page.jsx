@@ -118,7 +118,7 @@ const Projects = () => {
                   </div>
                   {/* Textual stuff */}
                   <p className="text-accent-hover"><span className="text-accent">* </span>{project.type}</p>
-                  <p className="text-off-white/60">{project.description}</p>
+                  <p className="text-off-white/60 min-h-25">{project.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
                 </div>
               );
