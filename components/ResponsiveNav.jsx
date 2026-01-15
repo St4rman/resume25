@@ -10,6 +10,13 @@ import {
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import localFont from "next/font/local";
+import {motion} from "motion/react";
+import { GiSevenPointedStar } from "react-icons/gi";
+
+const myfont = localFont({
+    src: './head.otf',
+});
 
 const links = [
   {
@@ -46,7 +53,8 @@ const ResponsiveNav = () => {
 
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
-            <h1>Idhant</h1>
+            <h1> 
+            <span className={`${myfont.className} text-accent px-4`}>Idhant</span></h1>
           </Link>
         </div>     
         <RNav />

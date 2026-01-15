@@ -33,54 +33,46 @@ const VRexp = () => {
           </TextFade>
           <div className="my-3 px-4 lg:px-6">
             <TextFade>
-              Details Coming Soon!!!
-            {/* <p className="my-5">
-              * Provided <span className="text-accent">Support QA </span> for
-              many <span className="text-accent"> Online Rockstar </span>{" "}
-              titles.
-            </p> */}
-            {/* <p className="my-5">
-              * Built games on many dev environments on{" "}
+              
+             <p className="my-5">
+              * Worked as the <span className="text-accent">Core tech Programmer</span> for
+              Newcastle University for a VR title <span className="text-accent"> Targeting Meta Quest VR </span>{" "}
+              built on Unity and SteamVR.
+            </p> 
+             <p className="my-5">
+              * Built the stucture and systems from ground up including {" "}
               <span className="text-accent">
-                Playsation Dev Kit, XBX Dev Kit, PC
+                Gameflow, Player Controller, Event Triggering
               </span>
-              , VR and Mobile.
-            </p> */}
-            {/* <p className="my-5">
-              * Provided <span className="text-accent">Dev Support</span> with
-              doubling back on exitsing bugs and providing new test cases for
-              new bugs.
-            </p> */}
+              , to be extensible and Modular. 
+            </p> 
             </TextFade>
           </div>
-          {/* <TextFade>
+          <TextFade>
           <h3 className="my-10 text-3xl">Details:</h3></TextFade>
           <div className="my-3 px-4 lg:px-6">
             <TextFade>
             <p className="my-5">
-              * Provided Quality Assurance on the services, updates, live events
-              on{" "}
-              <span className="text-accent">
-                GTA-VI, GTA-V, Read Dead Online
-              </span>{" "}
-              and many more. Worked with the Rockstar Lincoln team for synced
-              QA, helped follow up on bugs, and test cases. Logged bugs and
-              supported devs, providing clarity and test cases on persisting and
-              new bugs.{" "}
+              * Developed a modular <span className="text-accent">Data Driven Game Event system</span> for in game responses to character movement and interactions
+              on which allowed future development by both code and non-code teammates.
             </p>
             <p className="my-5">
-              * Worked with <span className="text-accent">PC</span> and current
-              and last gen <span className="text-accent">Xbox</span> and
-              <span className="text-accent"> PlayStation</span> console builds
-              alongside mobile environments.
+              * Implemented full VR 3D <span className="text-accent">character movement, with a both Discrete and Continuous movement mode</span>, with the Meta controllers, allowing for
+a tight and intuitive player controls.
             </p>
             <p className="my-5">
-              * Brought a technical outside the box thinking to the team and
-              being a talented all-rounder that can be relied upon. Bought an
-              in-depth understanding of the technical side of things that
-              allowed different approaches to QA testing.
-            </p></TextFade> */}
-          {/* </div> */}
+              * Developed <span className="text-accent">Player Interaction like clicking buttons</span>, interacting with physics objects in VR allowing for dynamic gameplay events to trigger.
+Allowed for non programmers to add content 2x fast
+            </p>
+            <p className="my-5">
+              * Optimized HDRP rendering for Meta Quest 3, enhancing performance and visual quality for VR experiences.
+            </p>
+            <p className="my-5">
+              * Wrote and maintained Tech Documentation for building and code analysis
+            </p>
+            
+            </TextFade> 
+          </div> 
         </div>
       </section>
     </div>

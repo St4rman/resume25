@@ -35,7 +35,7 @@ const Home = () => {
             <span className="text-xl italic text-accent-hover/80">
               Gameplay Programmer
             </span>
-            <p className="max-w-[500px] mb-9 xl:pr-40 text-off-white/90 text-left">
+            <p className="max-w-[500px] mb-9 min-w-full xl:pr-40 text-off-white/90 text-center xl:text-left">
               Specialised in player facing features and enabling teams. Excited
               to bring your gameplay Ideas to life.
             </p>
@@ -77,7 +77,7 @@ const Home = () => {
               <div className=" mb-8 xl:mb-0 min-w-full">
                 <Socials
                   containerStyles="flex gap-6"
-                  iconsStyles="z-10 w-15 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
+                  iconsStyles="z-10 w-15 h-12 bg-[#131212] border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-colors duration-500"
                 />
               </div>
               </TextFade>
@@ -86,13 +86,13 @@ const Home = () => {
              
             <TextFade>
             <div className="mt-8 text-accent-hover text-xl">
-              * Check out my 2025 Retrospective Video
+             
               <a 
               className="underline decoration-wavy ml-1"
               target="_blank"
               rel="noopener noreferrer"  alt="An external link to a post"
               href="https://www.youtube.com/watch?v=uZJSgVE78dY">
-                 here<FaLink className="inline" /> </a>
+                  * Check out my 2025 Retrospective Video here {" "}<FaLink className="inline" /> </a>
             </div>
             </TextFade>
           </div>
@@ -110,7 +110,7 @@ const Home = () => {
         </div>
         <Projects />
         <PExp />
-        <TExp />
+        
         </div>
     </section>
     

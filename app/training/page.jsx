@@ -61,6 +61,7 @@ const TExp = () => {
                       className="w-full flex justify-between items-center
                   mix-blend-lighten lg:h-60 h-50 relative"
                     >
+                      <Link href={project.href}>
                       <Image
                         src={project.image}
                         priority
@@ -69,7 +70,7 @@ const TExp = () => {
                         objectFit="cover"
                         alt=""
                         className="object-contain"
-                      />
+                      /></Link>
                     </div>
                     <div className="w-full flex justify-between items-center relative mt-3">
                       <h2 className="lg:text-4xl font-extrabold leading-none">

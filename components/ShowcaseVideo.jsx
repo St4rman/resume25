@@ -34,7 +34,7 @@ export function SourceVideo() {
       playsInline
       loop
       muted
-      className="brightness-80"
+      className="brightness-70"
     >
       <source src="assets/videos/quickshowcase.mp4" type="video/mp4" />
     </video>
