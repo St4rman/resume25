@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import localFont from "next/font/local";
 import { TextFade } from "@/components/TextFade";
 import TExp from "../training/page";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -15,29 +16,42 @@ const myfont = localFont({
 
 const experience = [
   {
+    title: "Limit Break Mentorship",
+    type: "Mentorship, Programming",
+    description:
+      "Worked with Game industry professional for training in Unreal Engine 5.",
+    image: "/assets/lmb.png",
+    href: "/limitbreak",
+    date: "March 25 - March 26"
+  },
+  {
     title: "Newcastle University",
     type: "Core VR Game Programmer",
     description:
       "Worked with a team at Newcastle University on a VR title targeting Steam VR.",
     image: "/assets/UnityVR.jpg",
     href: "/vr",
+    date:"May 24 - Dec 24",
   },
   {
     title: "Rockstar Games",
-    type: "Work Experience",
+    type: "Tech QA",
     description:
       "I provided online QA support to devs targeting PS, XBX devkits and online titles.",
     image: "/assets/lsdwwide.jpg",
     href: "/rockstar",
+    date:"Aug 22 - Aug 23",
   },
   {
     title: "Jambox Games",
-    type: "Work Experience",
+    type: "Game Programmer",
     description:
       "Gameplay Programmer for Indie company targeting Mobile on unity.",
     image: "/assets/jbx.png",
     href: "/jambox",
+    date:"Jan 22 - Aug 22",
   },
+  
 ];
 
 const PExp = () => {
@@ -53,7 +67,7 @@ const PExp = () => {
                           <p
                             className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
                           >
-                            Experience
+                            Experience & Training
                           </p>
                           </TextFade>
                         </div>
@@ -64,7 +78,7 @@ const PExp = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}>
-            <TextFade className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]" 
+            <TextFade className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[30px]" 
                         staggerChildren={0.25}> 
             {experience.map((project, index) => {
               return (
@@ -92,12 +106,13 @@ const PExp = () => {
                       <h2 className="lg:text-4xl font-extrabold leading-none">
                         {project.title}
                       </h2>
-                      <Link href={project.href} className="w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] rounded-full bg-off-white hover:bg-accent transition:colors duration-300 flex justify-center items-center">
-                        <BsArrowUpRight className="text-primary text-3xl" />
+                      <Link href={project.href} className="w-[50px] lg:w-[30px] h-[50px] lg:h-[30px] rounded-full bg-off-white hover:bg-accent transition:colors duration-300 flex justify-center items-center">
+                        <BsArrowUpRight className="text-primary text-3xl p-1" />
                       </Link>
                     </div>
                   </div>
                   {/* Textual stuff */}
+                  <p className="py-3 flex flex-row items-center"><FaCalendarAlt className="pr-1"/>{project.date}</p>
                   <p className="text-accent-hover"><span className="text-accent">* </span>{project.type}</p>
                   <p className="text-off-white/60 min-h-25">{project.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
@@ -107,7 +122,7 @@ const PExp = () => {
             </TextFade>
           </motion.div>
         </div>
-        <TExp />
+        {/* <TExp /> */}
       </section>
     </>
   );

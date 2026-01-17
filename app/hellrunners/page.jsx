@@ -55,7 +55,7 @@ const Hellrunners = () => {
                   generation.
                 </p>
                 
-                <Link
+                {/* <Link
                   href="https://starman.hashnode.dev/hellrunners-post-mortem"
                   target="_blank"
                   className="w-full flex mx-3 px-3 my-y py-3 flex-row justify-center items-center"
@@ -64,7 +64,7 @@ const Hellrunners = () => {
                     {" "}
                     Hellrunners Post Mortem <BsArrowUpRight className="mx-1" />
                   </Button>
-                </Link>
+                </Link> */}
                 </TextFade>
               </div>
             </div>
