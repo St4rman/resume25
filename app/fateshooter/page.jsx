@@ -50,7 +50,143 @@ const Demos = () => {
             Multiplayer FPS built in unreal engine with Steam session support. 1v1 game mode, multiple type of weapons.
           </p>
         </TextFade>
-          <div className="flex flex-row items-center">
+
+        <div className="flex flex-row items-center">
+                    <TextFade>
+                      <span className=" flex justify-center items-center lg:text-2xl text-1xl">
+                        <GiSevenPointedStar />
+                      </span>
+                    </TextFade>
+                    <TextFade>
+                      <p
+                        className={`${myfont.className} lg:text-3xl text-2xl font-extrabold leading-none text-off-white px-4`}
+                      >
+                        {" "}
+                        SUMMARY
+                      </p>
+                    </TextFade>
+                  </div>
+                  <div className="flex lg:flex-row flex-col justify-start align-top">
+                    <div className="my-3 px-4 lg:px-6 flex flex-col justify-top align-text-top flex-1">
+                      <TextFade>
+                        <p className="my-5 text-sm">
+                          This one v one multiplayer game was built as a way to push my limits with Mulitplayer, and Networked prorgamming in UNreal Engine. The main goals I've kept in mind while building this project are; to develop systems and create tech architecture thats optimized in multiplayer and working with steam sessions.
+                        </p>
+                      </TextFade>
+                      <TextFade>
+                        <p
+                          className={`${myfont.className} lg:text-3xl text-2xl font-extrabold leading-none text-off-white`}
+                        >
+                          {" "}
+                          Project Goals
+                        </p>
+                        <p className="my-4 ml-6 text-sm text-off-white/80">
+                          * Build a fully functional server-client architecture working with steam sessions.
+                        </p>
+                        <p className="my-4 ml-6 text-sm text-off-white/80">
+                          * Have this server client architecture work with steam sessions plugin, and allow players to create rooms for multiplayer games, and have people across the globe join.
+                        </p>
+                        <p className="my-4 ml-6 text-sm text-off-white/80">
+                          * Build a Weapon system with some movement ability built into each weapons
+                        </p>
+                      </TextFade>
+                    </div>
+        
+                    <div className="my-3 px-4 lg:px-6 flex flex-col justify-center align-top flex-1">
+                      <TextFade>
+                        <p
+                          className={`${myfont.className} lg:text-3xl text-2xl font-extrabold leading-none text-off-white`}
+                        >
+                          {" "}
+                          Project Specifications
+                        </p>
+                        <p className="my-2">
+                          * Engine:{" "}
+                          <span className="text-off-white/80">
+                            Unreal Engine,Multiplayer, C++
+                          </span>
+                        </p>
+                        <p className="my-2">
+                          * Time:{" "}
+                          <span className="text-off-white/80">1 month (6h/day)</span>
+                        </p>
+                        <p className="my-2">
+                          * Platform: <span className="text-off-white/80">PC </span>
+                        </p>
+                        <p className="my-2">
+                          * Team Size:{" "}
+                          <span className="text-off-white/80">1 (programmer)</span>
+                        </p>
+                        <p className="my-2">
+                          * Plugins and Technologies:{" "}
+                          <span className="text-off-white/80">
+                            Geplication concepts, NetNotifies, RPC, Replication concepts, Steam Sessions Plugin
+                          </span>
+                        </p>
+                      </TextFade>
+                    </div>
+                  </div>
+                  <div className="min-h-20"></div>
+
+
+
+          <div className="flex flex-row items-center my-5">
+                      <TextFade>
+                        <span className=" flex justify-center items-center lg:text-2xl text-1xl">
+                          <GiSevenPointedStar />
+                        </span>
+                      </TextFade>
+                      <TextFade>
+                        <p
+                          className={`${myfont.className} lg:text-3xl text-2xl font-extrabold leading-none text-off-white px-4`}
+                        >
+                          {" "}
+                          GAME OVERVIEW
+                        </p>
+                      </TextFade>
+                    </div>
+                    <div className="flex lg:flex-row flex-col">
+                      <div className="my-3 px-4 lg:px-6 flex flex-col justify-center align-top">
+                        <TextFade>
+                          <p className="my-5">
+                            * A multiplayer 1v1 FPS, with a focus on <span className="text-accent">movement techinques like rocket jumping</span>, tight movement and fun gameplay. 
+             
+                          </p>
+                          <p className="my-5">
+                            * Built in Unreal 5 with  <span className="text-accent">steam sessions</span> and server creation setup support. 
+
+                          </p>
+
+                          <p className="my-5">
+                * Featuring a 1v1 first to 10 game mode, with respawns with  <span className="text-accent">server side shooting</span> and physics with additional client side effects. 
+              </p>
+                        </TextFade>
+                      </div>
+                      <TextFade>
+                        <div className="px-5">
+                          <Video />
+                          <div className=" pt-7 flex flex-col lg:flex-row justify-center items-center">
+                            <Link
+                              href="https://youtu.be/uZJSgVE78dY?si=m0Ge9__9uSW3vYx9&t=165"
+                              target="_blank"
+                              className="w-full flex mx-3 px-3 my-y py-3 flex-row justify-center items-center"
+                            >
+                              <Button size={"xl"} shape={"round"}>
+                                {" "}
+                                Detailed Video <BsArrowUpRight className="mx-1" />
+                              </Button>
+                            </Link>
+                          </div>
+                        </div>
+                      </TextFade>
+                    </div>
+                    <div className="min-h-20"></div>
+
+
+
+
+
+          {/* <div className="flex flex-row items-center">
             <TextFade className="flex flex-row items-center">
             <span className=" flex justify-center items-center lg:text-2xl text-1xl">
               <GiSevenPointedStar />
@@ -95,9 +231,9 @@ const Demos = () => {
           </div>
               </TextFade>
             </div>
-          </div>
+          </div> */}
 
-          <TextFade>
+          {/* <TextFade>
             <h3 className="my-3 text-1xl">Tech Used:</h3>
           </TextFade>
           
@@ -116,7 +252,7 @@ const Demos = () => {
               Free for all with tracked kills and Game mode, game state and player state networked state
             </p>
             </TextFade>
-          </div>
+          </div> */}
 
           <TextFade>
           <h3 className="my-10 text-3xl">Details:</h3>

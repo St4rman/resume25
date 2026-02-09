@@ -68,7 +68,7 @@ const Demos = () => {
             <div className="my-3 px-4 lg:px-6 flex flex-col justify-top align-text-top flex-1">
               <TextFade>
                 <p className="my-5 text-sm">
-                  This game was built as an excercise to improve my expertise
+                  This game was built as an exercise  to improve my expertise
                   with Gameplay Ability System and game programming with Unreal
                   Engine 5. The main ideas I've kept in mind while building this
                   project are; to write code that's flexible and Learn the in
@@ -89,7 +89,7 @@ const Demos = () => {
                 <p className="my-4 ml-6 text-sm text-off-white/80">
                   * Building an extensible weapon system that works with
                   Unreal's Gameplay Ability System, and the stat values,
-                  Resueable in future projects.
+                  Reusable in future projects.
                 </p>
                 <p className="my-4 ml-6 text-sm text-off-white/80">
                   * Build a Boss AI that's reactive and has a bunch of attack
@@ -207,7 +207,7 @@ const Demos = () => {
             and why I kept going back to the genre.
           </p>
           <p className="my-5 mx-10 text-justify">
-            The player is placed in an seemingly hurculean yet possible task,
+            The player is placed in an seemingly herculean yet possible task,
             where they have a{" "}
             <span className="text-accent">myriad of tools </span>in their
             arsenal to target each{" "}
@@ -225,8 +225,8 @@ const Demos = () => {
             all times, and think about actions.
           </p>
           <p className="my-5 mx-10 text-justify text-sm text-off-white/80 lg:max-w-150">
-            * The boss needed to have multiple "combos" so it feels like its
-            reading the players moves.
+            * The boss needed to have multiple "combos" so it feels like it's
+            reading the player's moves.
           </p>
           <p className="my-5 text-justify">
             Each of these issues were targeted and fixed with many architectural
@@ -254,7 +254,7 @@ const Demos = () => {
             </h4>
 
             <p className="my-5 text-justif text-sm">
-              To make my features resueable for both the player and the boss, I
+              To make my features reusable for both the player and the boss, I
               decided early on to invest in writing a stat system. The player
               would contain a "StatContianer" that would house the myriad of
               stats.
@@ -405,13 +405,13 @@ const Demos = () => {
               </TextFade>
             </div>
             <h4 className="text-xl underline underline-offset-8 decoration-text-accnet-hover/50 text-accent-hover flex lg:flex-col ">
-              The Main Villian, the Sauce of the game
+              The Main Villain, the Sauce of the game
             </h4>
             <p className="my-5 text-justify text-sm">
               The bosses are the main draw of fromsoft games, so I had to make
               sure that mine was good too. Using Behavior trees, EQS, and pawn
               sensing, allowed me to make a basic behavior tree, allowing the
-              boss to walk, attack and chase the player. But like almsot
+              boss to walk, attack and chase the player. But like almost 
               everything in game programming, I ran into a problem.
             </p>
 
@@ -429,7 +429,7 @@ const Demos = () => {
                 <p className="text-justify text-2xl text-accent">THE SOLUTION</p>
                 <p className="my-2 text-justify text-sm">
                   I ended up doing something called <span className="text-accent">"State Reading"</span>. Before picking an action, the boss AI makes a few
-                  checks to see if the <span className="text-accent">player is in a certain state</span>. Wether theyre "far away", "close", "have just attacked etc" 
+                  checks to see if the <span className="text-accent">player is in a certain state</span>. Whether they are "far away", "close", "have just attacked etc" 
                   and takes that into account before picking an action.
                 </p>
               </div>
@@ -483,14 +483,14 @@ const Demos = () => {
           </p>
 
             <p className="my-5 mx-10 text-justify text-sm text-off-white/80 lg:max-w-200">
-            * Extend the stat system; the current stat system, although being quite extensible still is somewhat "basic" for my tastes. Some potential addtions that would
-            ask for littel dev time but help with making the game feel better would be; attacks that limit stats (max health/max stamina), animation speed/invulerabilty frames based on 
+            * Extend the stat system; the current stat system, although being quite extensible still is somewhat "basic" for my tastes. Some potential additions  that would
+            ask for little dev time but help with making the game feel better would be; attacks that limit stats (max health/max stamina), animation speed/invulnerability frames based on 
             stats rather than equip load etc. 
           </p>
 
           <p className="my-5 mx-10 text-justify text-sm text-off-white/80 lg:max-w-200">
             * Optimization; this is an never ending pursuit, though one I try and strive towards. I have a few ideas on how to optimize my code, especially for the boss AI.
-            As it is right now, it's not too bad, however, the checks can defintely be done at a smaller amount, and can be based on player action rather than 
+            As it is right now, it's not too bad, however, the checks can definitely be done at a smaller amount, and can be based on player action rather than 
             time.
           </p>
 
