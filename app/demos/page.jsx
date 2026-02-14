@@ -11,6 +11,7 @@ import SoulsGallery from "@/components/SoulsGallery";
 import { TextFade } from "@/components/TextFade";
 import { WordsPullUp } from "@/components/word-pull-up";
 import Zimage from "@/components/zimage";
+import QuoteSVG from "@/components/QuoteMark";
 
 const myfont = localFont({
   src: "../head.otf",
@@ -206,6 +207,24 @@ const Demos = () => {
             To start off, I ended up analyzing what makes games like these fun,
             and why I kept going back to the genre.
           </p>
+
+
+          <div className="flex my-15 mx-10 flex-row align-top">
+            <p className="-my-15 -mx-8">
+              <QuoteSVG
+              color={"#f6224c"}
+              size={"100px"}/></p>
+            <p className="text-justify">
+            The player is placed in an seemingly herculean yet possible task,
+            where they have a{" "}
+            <span className="text-accent">myriad of tools </span>in their
+            arsenal to target each{" "}
+            <span className="text-accent">difficult enemy</span>, with a high
+            focus on agency, and{" "}
+            <span className="text-accent">skill expression.</span>
+          </p>
+          </div>
+          
           <p className="my-5 mx-10 text-justify">
             The player is placed in an seemingly herculean yet possible task,
             where they have a{" "}
