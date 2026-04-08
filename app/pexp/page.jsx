@@ -16,6 +16,15 @@ const myfont = localFont({
 
 const experience = [
   {
+    title: "Evil Bean Games",
+    type: "Lead AI Game Programmer",
+    description:
+      "AI & Gameplay Programmer at Evil Bean Games, working on a 3rd person Hack and slash game, targeting Steam.",
+    image: "/assets/ebg/Main_LogoV3.png",
+    href: "/ebg",
+    date:"Mar 26 - Current",
+  },
+  {
     title: "Limit Break Mentorship",
     type: "Mentorship, Programming",
     description:
@@ -51,6 +60,8 @@ const experience = [
     href: "/jambox",
     date:"Jan 22 - Aug 22",
   },
+
+  
   
 ];
 
@@ -67,7 +78,7 @@ const PExp = () => {
                           <p
                             className={`${myfont.className} lg:text-7xl text-4xl font-extrabold leading-none text-off-white px-4`}
                           >
-                            Experience & Training
+                            Experience
                           </p>
                           </TextFade>
                         </div>
@@ -78,7 +89,7 @@ const PExp = () => {
               opacity: 1,
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}>
-            <TextFade className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[30px]" 
+            <TextFade className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]" 
                         staggerChildren={0.25}> 
             {experience.map((project, index) => {
               return (

@@ -12,6 +12,7 @@ import { TextFade } from "@/components/TextFade";
 import TExp from "./training/page";
 import TechStack from "./techStack/page";
 import { FaMapMarkerAlt,FaCalendarAlt } from "react-icons/fa";
+import Timeline from "@/components/Timeline";
 
 const myfont = localFont({
   src: "../components/head.otf",
@@ -43,7 +44,7 @@ const Home = () => {
                   <FaMapMarkerAlt className="m-1" />{" "}
                   <span className="pr-3">Newcastle Upon Tyne, UK</span>
                   <FaCalendarAlt className="m-1"/>
-                  <span className="pr-3">2 years of exp.</span>
+                  <span className="pr-3">3 years of exp.</span>
                 </div>
               </div>
               <p className="max-w-[900px] mb-9 min-w-full xl:pr-2 text-off-white/90 text-center xl:text-left">
@@ -52,8 +53,8 @@ const Home = () => {
                 <Link href="/rockstar" className="text-accent-hover/70 underline decoration-wavy ml-1">Rockstar Games</Link>, 
                 <Link href="/vr" className="text-accent-hover/70 underline decoration-wavy ml-1">Newcastle University</Link>
                 {" "} & <Link href="/jambox" className="text-accent-hover/70 underline decoration-wavy ml-1">Jambox Games</Link>. Working with a cross disciplinary team and bringing it
-                all together is what keeps me building. Currently building a 3D
-                speedrun platformer.
+                all together is what keeps me building. Currently building a hack & slash at 
+                <Link href="/ebg" className="text-accent-hover/70 underline decoration-wavy ml-1">Evil Bean Games</Link>.
               </p>
 
               
@@ -130,8 +131,9 @@ const Home = () => {
           <div></div>
         </div>
         <TechStack />
-        <Projects />
+        {/* <Timeline /> */}
         <PExp />
+        <Projects />
       </div>
     </section>
   );

@@ -12,6 +12,14 @@ const myfont = localFont({
 });
 
 const projects = [
+  {
+    title: "Crimson Dust",
+    type: "Professional Game slated for release soon.",
+    description:
+      "Hack and slash, Built on unreal, Targeting steam.",
+    image: "/assets/ebg/cassian.png",
+    href: "/ebg",
+  },
   
   {
     title: "Project Fate",

@@ -189,3 +189,23 @@
   background: #f0f66e;
   color:#f6224c;
 }
+
+.warning-label{
+  background: repeating-linear-gradient(
+  45deg,
+  #eff66e6e,
+  #eff66e6e 40px,
+  #00000000 40px,
+  #00000000 80px
+);
+}
+
+.warning-label-res{
+  background: repeating-linear-gradient(
+  45deg,
+  #eff66e6e,
+  #eff66e6e 20px,
+  #00000000 20px,
+  #00000000 40px
+);
+}
