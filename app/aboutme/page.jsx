@@ -12,6 +12,7 @@ import { FaPeopleArrows } from 'react-icons/fa';
 import { FaGun } from 'react-icons/fa6';
 import { WordsPullUp } from "@/components/word-pull-up";
 import { TextFade } from "@/components/TextFade";
+import Timeline from '@/components/Timeline';
 
 const test = [
 "1", "2", "3"
@@ -63,7 +64,8 @@ const AboutMe = () => {
               </div></TextFade>
           </div>
         </div>
-    
+      <div className="min-h20"></div>
+      <Timeline />
 
      
     </>

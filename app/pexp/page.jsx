@@ -14,18 +14,18 @@ const myfont = localFont({
 });
 
 
-const experience = [
+const projects = [
   {
     title: "Evil Bean Games",
     type: "Lead AI Game Programmer",
     description:
-      "AI & Gameplay Programmer at Evil Bean Games, working on a 3rd person Hack and slash game, targeting Steam.",
+      "AI & Gameplay Programmer at Evil Bean Games, working on a Hack and slash game, targeting Steam.",
     image: "/assets/ebg/Main_LogoV3.png",
     href: "/ebg",
     date:"Mar 26 - Current",
   },
   {
-    title: "Limit Break Mentorship",
+    title: "Limit Break",
     type: "Mentorship, Programming",
     description:
       "Worked with Game industry professional for training in Unreal Engine 5.",
@@ -34,7 +34,7 @@ const experience = [
     date: "March 25 - March 26"
   },
   {
-    title: "Newcastle University",
+    title: "Newcastle Uni.",
     type: "Core VR Game Programmer",
     description:
       "Worked with a team at Newcastle University on a VR title targeting Steam VR.",
@@ -90,9 +90,10 @@ const PExp = () => {
               transition: { delay: 0.001, duration: 0.2, ease: "easeIn" },
             }}>
             <TextFade className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]" 
-                        staggerChildren={0.25}> 
-            {experience.map((project, index) => {
+            staggerChildren={0.25}> 
+            {projects.map((project, index) => {
               return (
+                
                 <div
                   key={index}
                   className="flex-1 flex-col justify-center gap-6 group"
@@ -103,7 +104,7 @@ const PExp = () => {
                       className="w-full flex justify-between items-center
                   mix-blend-lighten lg:h-60 h-50 relative"
                     >
-                       <Link href={project.href}><Image
+                      <Link href={project.href}><Image
                         src={project.image}
                         priority
                         quality={100}
@@ -113,17 +114,16 @@ const PExp = () => {
                         className="object-contain"
                       /></Link>
                     </div>
-                    <div className="w-full flex justify-between items-center relative mt-3">
-                      <h2 className="lg:text-4xl font-extrabold leading-none">
+                    <div className="w-full flex justify-around items-center relative mt-3">
+                      <h2 className="lg:text-3xl font-extrabold leading-none">
                         {project.title}
                       </h2>
-                      <Link href={project.href} className="w-[50px] lg:w-[30px] h-[50px] lg:h-[30px] rounded-full bg-off-white hover:bg-accent transition:colors duration-300 flex justify-center items-center">
-                        <BsArrowUpRight className="text-primary text-3xl p-1" />
+                      <Link href={project.href} className="w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] rounded-full bg-off-white hover:bg-accent transition:colors duration-300 flex justify-center items-center">
+                        <BsArrowUpRight className="text-primary text-3xl" />
                       </Link>
                     </div>
                   </div>
                   {/* Textual stuff */}
-                  <p className="py-3 flex flex-row items-center"><FaCalendarAlt className="pr-1"/>{project.date}</p>
                   <p className="text-accent-hover"><span className="text-accent">* </span>{project.type}</p>
                   <p className="text-off-white/60 min-h-25">{project.description}</p>
                   <div className="border-b border-white/20 w-full"></div>

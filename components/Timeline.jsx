@@ -36,9 +36,10 @@ const Timeline = () => {
               </time>
                 
               <h3 className={`${myfont.className} text-2xl font-bold  text-accent`}>
-    
+                <Link href="/ebg" className="underline">
                 EVIL BEAN GAMES
-                </h3>
+                </Link>
+              </h3>
                 
 
               <p className="mt-0.5 text-sm  text-off-white text-right ml-40">
