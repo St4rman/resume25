@@ -225,15 +225,7 @@ const Demos = () => {
           </p>
           </div>
           
-          <p className="my-5 mx-10 text-justify">
-            The player is placed in an seemingly herculean yet possible task,
-            where they have a{" "}
-            <span className="text-accent">myriad of tools </span>in their
-            arsenal to target each{" "}
-            <span className="text-accent">difficult enemy</span>, with a high
-            focus on agency, and{" "}
-            <span className="text-accent">skill expression.</span>
-          </p>
+         
           <p className="my-5 text-justify ">
             While planning, and designing the tech-architecture of my weapon
             system there were a few challenges I identified;
