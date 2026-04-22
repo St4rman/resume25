@@ -4,6 +4,8 @@ import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa";
 import { motion } from "motion/react";
 import localFont from "next/font/local";
+import { usePathname } from "next/navigation";
+import ContactPage from "@/components/ContactPage";
 
 const myfont = localFont({
   src: "../../components/head.otf",
@@ -23,7 +25,31 @@ const info = [
 ];
 
 const Contact = () => {
+  const currentPath = usePathname();
+  if(currentPath=="/contact"){
+    return(
+      <>
+      <div className="container mx-auto lg:px-20">
+       <ContactPage />
+      </div>
+      <BottomPanel/>
+      </>
+    )
+  }
   return (
+    <>
+    <BottomPanel/>
+    
+    </>
+  );
+};
+
+export default Contact;
+
+
+const BottomPanel = ()=>{
+  return(
+    <>
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
@@ -93,7 +119,6 @@ const Contact = () => {
         </div>
       </div>
     </motion.section>
+    </>
   );
-};
-
-export default Contact;
+}
