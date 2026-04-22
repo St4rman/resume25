@@ -14,7 +14,7 @@ export async function POST(req){
     try{
         const emailRes = await resend.emails.send({
             from: 'Game dev Contact form <onboarding@resend.dev>',
-            to: 'delivered@resend.dev',
+            to: 'i.dabral26@gmail.com',
             subject: 'Contact from website contact form, game dev',
             html: ` <h1>new message recieved!</h1>
             <h3>Game dev form</h3>
