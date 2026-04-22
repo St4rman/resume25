@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import localFont from "next/font/local";
 import { usePathname } from "next/navigation";
 import ContactPage from "@/components/ContactPage";
+import { TextFade } from "@/components/TextFade";
 
 const myfont = localFont({
   src: "../../components/head.otf",
@@ -29,10 +30,20 @@ const Contact = () => {
   if(currentPath=="/contact"){
     return(
       <>
-      <div className="container mx-auto lg:px-20">
+      <TextFade>
+      <div className="container mx-auto lg:px-20 py-20 flex flex-col px-10 sm:flex-row justify-between align-middle gap-10">
+        <div>
+          <div className={`${myfont.className} italic`}>
+              <h1 className="text-4xl">Building a game?</h1>
+            </div>
+            <div className="text-4xl italic text-accent">
+              <h2 className="text-4xl">Lets Chat.</h2>
+            </div>
+        </div>
        <ContactPage />
       </div>
       <BottomPanel/>
+      </TextFade>
       </>
     )
   }
@@ -108,14 +119,14 @@ const BottomPanel = ()=>{
               })}
             </ul>
           </div>
-          <div className="order-1 flex-1 flex xl:order-none xl:justify-center flex-col justify-start">
+          {/* <div className="order-1 flex-1 flex xl:order-none xl:justify-center flex-col justify-start">
             <div className={`${myfont.className} italic`}>
               <h1 className="text-4xl">Building a game?</h1>
             </div>
             <div className="text-4xl italic text-accent">
               <h2 className="text-4xl">Lets Chat.</h2>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.section>
